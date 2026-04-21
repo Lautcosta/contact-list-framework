@@ -1,0 +1,20 @@
+Sí, tiene todo el sentido. Ese flujo está muy bien planteado.
+
+Solo te ordeno en versión “lista para implementar”:
+
+Crear test: should add a new contact successfully
+Instanciar ContactListPage y ContactFormPage
+(Opcional pero recomendable) assert inicial de que estás en lista
+Click en addNewContactButton
+Assert de que estás en vista de formulario (URL o heading único del form)
+fillContactForm(contact) con tu data
+submitContact() (o como la hayas llamado)
+Assert de que volviste a lista (URL o botón Add a New Contact visible)
+Assert final de negocio: el contacto nuevo aparece (ideal por dato único, ej. email)
+Muy importante para que no sea flaky:
+
+El assert más fuerte es el último (contacto visible en lista), no solo “cambió la URL”.
+Mini consejo extra:
+
+Como tu contact.ts usa Date.now(), cada corrida genera un contacto único; eso te ayuda muchísimo para verificar sin colisiones.
+Si querés, te paso una plantilla base de addContact.spec.ts con esos pasos en orden, sin tocar tus archivos.
