@@ -2,9 +2,7 @@
 
 [![Playwright CI](https://github.com/Lautcosta/contact-list-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/Lautcosta/contact-list-framework/actions/workflows/playwright.yml)
 
-Automatización end-to-end sobre la aplicación demo **[Thinking Tester Contact List](https://thinking-tester-contact-list.herokuapp.com/)**, con foco en buenas prácticas de QA: **Page Object Model**, **fixtures**, sesión reutilizable vía **API + `storageState`**, y **CI** en GitHub Actions.
-
-> Proyecto pensado para **portfolio / CV**: estructura clara, tests mantenibles y pipeline reproducible.
+Automatización end-to-end sobre la aplicación demo **[Thinking Tester Contact List](https://thinking-tester-contact-list.herokuapp.com/)**, con foco en buenas prácticas de QA: **Page Object Model**, **fixtures**, sesión reutilizable vía **API + `storageState`**, y **CI** en GitHub Actions. Objetivo: suite mantenible, bien estructurada y reproducible en entornos locales y en pipeline.
 
 ---
 
@@ -154,4 +152,4 @@ Tras cada corrida exitosa podés descargar el artifact **`playwright-report`** d
 
 ## Licencia
 
-Uso educativo / portfolio. La aplicación bajo prueba pertenece a su autora (demo pública).
+Uso educativo y de referencia técnica. La aplicación bajo prueba pertenece a su autora (demo pública).
